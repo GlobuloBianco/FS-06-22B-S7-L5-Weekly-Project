@@ -1,0 +1,177 @@
+@import 'https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap';
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  box-shadow: 0 1px 15px #1a1a1a;
+  background-color: #ffb222;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  -webkit-animation: gradiente 15s ease infinite;
+          animation: gradiente 15s ease infinite;
+}
+header h2 {
+  position: relative;
+  color: rgba(0, 0, 0, 0.3019607843);
+}
+header h2:before {
+  content: attr(data-text);
+  position: absolute;
+  overflow: hidden;
+  max-width: 10em;
+  white-space: nowrap;
+  color: #fff;
+  -webkit-animation: caricamento 8s infinite;
+          animation: caricamento 8s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+#scrivi {
+  padding: 5px 25px;
+  border: solid #1a1a1a 3px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 0px #1a1a1a;
+}
+#scrivi:hover {
+  transform: translateY(2px);
+  background-color: #ddd;
+  box-shadow: 0px 2px 0px #1a1a1a;
+}
+#scrivi:active {
+  transform: translateY(5px);
+  box-shadow: 0px 2px 0px #1a1a1a;
+}
+
+#errore {
+  -webkit-animation: shakieshakie 0.8s infinite;
+          animation: shakieshakie 0.8s infinite;
+}
+
+li {
+  list-style-type: upper-roman;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+#popUp {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9019607843);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#popUp.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@-webkit-keyframes caricamento {
+  0% {
+    max-width: 0;
+  }
+}
+
+@keyframes caricamento {
+  0% {
+    max-width: 0;
+  }
+}
+@-webkit-keyframes gradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes shakieshakie {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes shakieshakie {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,73 @@
+@import 'https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap';
+
+$bg-gray: #ddd;
+$soft-black: #1a1a1a;
+
+* {font-family: 'Quicksand', sans-serif;}
+
+header{
+    box-shadow: 0 1px 15px $soft-black;
+    background-color: #ffb222;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    animation: gradiente 15s ease infinite;
+    h2 {
+        position: relative;
+        color: #0000004d;
+    }
+    h2:before {
+        content: attr(data-text);
+        position: absolute;
+        overflow: hidden;
+        max-width: 10em;
+        white-space: nowrap;
+        color: #fff;
+        animation: caricamento 8s infinite;
+        animation-direction: alternate;
+    }
+}
+
+#scrivi {
+    padding: 5px 25px;
+    border: solid $soft-black 3px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 0px $soft-black;
+    &:hover {
+        transform: translateY(2px);
+        background-color: $bg-gray;
+        box-shadow: 0px 2px 0px $soft-black;
+    }
+    &:active {
+        transform: translateY(5px);
+        box-shadow: 0px 2px 0px $soft-black;
+    }
+}
+//messaggio errore senza riempimento
+#errore { animation: shakieshakie 0.8s infinite; }
+
+//lista/elenco di nomi
+li {
+    list-style-type: upper-roman;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+//popup conferma elimina
+#popUp {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffe6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    &.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+ //Animazioni
+@import 'animazioni';

@@ -1,0 +1,29 @@
+{
+  "elenco": [
+    {
+      "nome": "mario",
+      "cognome": "rossi",
+      "id": 1
+    },
+    {
+      "nome": "luigi",
+      "cognome": "verdi",
+      "id": 2
+    },
+    {
+      "nome": "wario",
+      "cognome": "gialli",
+      "id": 3
+    },
+    {
+      "nome": "waluigi",
+      "cognome": "violi",
+      "id": 4
+    },
+    {
+      "nome": "Peach",
+      "cognome": "Rosi",
+      "id": 5
+    }
+  ]
+}
